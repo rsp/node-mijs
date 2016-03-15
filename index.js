@@ -49,28 +49,3 @@ module.exports = function (opt) {
     return e;
 }
 
-// global.n0 = (f,x) => x;
-// global.n1 = (f,x) => f(x);
-// global.n2 = (f,x) => f(f(x));
-// global.n3 = (f,x) => f(n2(x));
-
-// P(a)(b) - makes a pair of a and b
-
-
-// global.list = (...e) => {
-//     var v, l = e;
-//     while (e.length) {
-//         v = e.pop();
-//         l = pair(v, l);
-//     }
-//     return l;
-// };
-
-// global.inc = (x) => (x+1);
-
-// global.printPair = (p) => { console.log(car(p), cdr(p)); };
-
-// // global.printList = (l) => { console.log(car(p), cdr(p)); };
-
-// global.printNum = (x) => { console.log( x(inc,0) ); }
-
