@@ -1,0 +1,19 @@
+{
+  "name": "mijs",
+  "version": "0.0.0",
+  "description": "Minimal Irreducible JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsp/node-mijs.git"
+  },
+  "author": "Rafał Pocztarski <r.pocztarski@gmail.com> (https://rsp.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsp/node-mijs/issues"
+  },
+  "homepage": "https://github.com/rsp/node-mijs#readme"
+}
