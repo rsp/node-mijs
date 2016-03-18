@@ -14,11 +14,8 @@ const Np = a => console.log(Nv(a));
 const Pp = a => console.log(Nv(H(a)) + " " + Nv(R(a)));
 const Ls = a => a ? Nv(H(a)) + " " + Ls(R(a)) : "";
 const Lp = a => console.log(Ls(a));
-
 const Ninc = a => b => c => b(a(b)(c));
-
 const Nadd = a => b => c => d =>  a(c)(b(c)(d));
-// const Nmul = a => b => c => d =>  a(b(c))(d);
 const Nmul = a => b => c =>  a(b(c));
 const Nexp = a => b => b(a);
 const Npred = a => b => c => a((d => e => e(d(b))))(f => c)(g => g);
