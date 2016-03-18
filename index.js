@@ -18,7 +18,8 @@ const Lp = a => console.log(Ls(a));
 const Ninc = a => b => c => b(a(b)(c));
 
 const Nadd = a => b => c => d =>  a(c)(b(c)(d));
-const Nmul = a => b => c => d =>  a(b(c))(d);
+// const Nmul = a => b => c => d =>  a(b(c))(d);
+const Nmul = a => b => c =>  a(b(c));
 
 module.exports = function (opt) {
     const e = {
