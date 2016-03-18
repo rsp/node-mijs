@@ -21,6 +21,7 @@ const Nadd = a => b => c => d =>  a(c)(b(c)(d));
 // const Nmul = a => b => c => d =>  a(b(c))(d);
 const Nmul = a => b => c =>  a(b(c));
 const Nexp = a => b => b(a);
+const Npred = a => b => c => a((d => e => e(d(b))))(f => c)(g => g);
 
 module.exports = function (opt) {
     const e = {
@@ -40,7 +41,8 @@ module.exports = function (opt) {
         Ninc:Ninc,
         Nadd:Nadd,
         Nmul:Nmul,
-        Nexp:Nexp
+        Nexp:Nexp,
+        Npred:Npred
     };
     if (opt && opt.global) {
         for (var k in e) {
